@@ -5,6 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UsuariosRepository extends JpaRepository<Usuarios, Long> {
 
-    Usuarios getPruebaById(Long id);
+    Usuarios getObjById(Long id);
 
 }

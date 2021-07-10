@@ -6,9 +6,9 @@ import java.util.List;
 
 public interface UsuariosService {
 
-    Usuarios getPruebaById(Long id);
+    Usuarios getById(Long id);
 
-    Usuarios create(Usuarios usuarios);
+    Usuarios create(Usuarios obj);
 
     void delete(Long id);
 

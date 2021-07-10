@@ -15,19 +15,19 @@ public class ProductosServiceImpl implements ProductosService {
     private ProductosRepository repository;
 
     @Override
-    public Productos getPruebaById(Long id) {
-        return repository.getPruebaById(id);
+    public Productos getById(Long id) {
+        return repository.getObjById(id);
     }
 
     @Override
-    public Productos create(Productos productos) {
-        return repository.save(productos);
+    public Productos create(Productos obj) {
+        return repository.save(obj);
     }
 
     @Override
     public void delete(Long id) {
-        Productos producto = repository.getPruebaById(id);
-        repository.delete(producto);
+        Productos obj = repository.getObjById(id);
+        repository.delete(obj);
     }
 
     @Override

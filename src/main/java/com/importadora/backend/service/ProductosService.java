@@ -6,9 +6,9 @@ import java.util.List;
 
 public interface ProductosService {
 
-    Productos getPruebaById(Long id);
+    Productos getById(Long id);
 
-    Productos create(Productos productos);
+    Productos create(Productos obj);
 
     void delete(Long id);
 

@@ -33,7 +33,7 @@ public class UsuariosController {
     @GetMapping(path = "/getById")
     @ResponseBody
     public Usuarios getById(@RequestParam Long id){
-        Usuarios obj = service.getPruebaById(id);
+        Usuarios obj = service.getById(id);
         return obj;
     }
 

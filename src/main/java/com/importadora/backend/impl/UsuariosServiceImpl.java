@@ -15,19 +15,19 @@ public class UsuariosServiceImpl implements UsuariosService {
     private UsuariosRepository repository;
 
     @Override
-    public Usuarios getPruebaById(Long id) {
-        return repository.getPruebaById(id);
+    public Usuarios getById(Long id) {
+        return repository.getObjById(id);
     }
 
     @Override
-    public Usuarios create(Usuarios usuarios) {
-        return repository.save(usuarios);
+    public Usuarios create(Usuarios obj) {
+        return repository.save(obj);
     }
 
     @Override
     public void delete(Long id) {
-        Usuarios usuario = repository.getPruebaById(id);
-        repository.delete(usuario);
+        Usuarios obj = repository.getObjById(id);
+        repository.delete(obj);
     }
 
     @Override
